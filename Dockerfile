@@ -8,4 +8,3 @@ ADD version.json $HOME
 #RUN pip install pytest
 
 CMD python ./editjason.py $build_id
-
