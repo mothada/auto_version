@@ -1,0 +1,8 @@
+FROM python:2
+ADD editjason.py
+ADD version.json
+RUN mkdir --parents /opt/auto_version/f
+
+RUN pip install pytest
+
+CMD [ "python", "./editjason.py" "15"]
